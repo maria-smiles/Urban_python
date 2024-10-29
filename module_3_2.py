@@ -7,7 +7,7 @@
 # Попробуем реализовать функцию с подробной логикой.
 
 
-def send_email(message, recipient, sender="university.help@gmail.com"):
+def send_email(message, recipient, *, sender="university.help@gmail.com"):
 # Проверка на корректность e-mail отправителя и получателя.
     recipient_suff = recipient.endswith(".com") or recipient.endswith(".ru" ) or recipient.endswith(".net")
     sender_suff = sender.endswith(".com") or sender.endswith(".ru") or sender.endswith(".net")
